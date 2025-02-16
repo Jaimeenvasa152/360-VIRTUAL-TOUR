@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-1">
+        <li class="text">1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-2">
+        <li class="text">2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-4">
+        <li class="text">4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-7">
+        <li class="text">7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-10">
+        <li class="text">10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-12">
+        <li class="text">12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-15">
+        <li class="text">15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-phase_2_admin_to_cspit_1">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-phase_2_admin_to_cspit_2">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-phase_2_admin_to_cspit_3">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-phase_2_admin_to_cspit_4">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-phase_2_admin_to_cspit_5">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-phase_2_admin_to_cspit_8">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-phase_2_admin_to_cspit_10">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-phase_2_admin_to_cspit_11">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-phase_2_admin_to_cspit_12">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-phase_2_admin_to_cspit_13">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-phase_2_admin_to_cspit_14">
+        <li class="text">PHASE_2_ADMIN_TO_CSPIT_14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-phase_2_admin_to_depstar_1">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-phase_2_admin_to_depstar_2">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-phase_2_admin_to_depstar_3">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-phase_2_admin_to_depstar_5">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-phase_2_admin_to_depstar_6">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-phase_2_admin_to_depstar_8">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-phase_2_admin_to_depstar_9">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-phase_2_admin_to_depstar_10">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-phase_2_admin_to_depstar_11">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-phase_2_admin_to_depstar_13">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-phase_2_admin_to_depstar_14">
+        <li class="text">PHASE_2_ADMIN_TO_DEPSTAR_14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-phase_3_cspit_to_tank_1">
+        <li class="text">PHASE_3_CSPIT_TO_TANK_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-phase_3_cspit_to_tank_2">
+        <li class="text">PHASE_3_CSPIT_TO_TANK_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-phase_3_cspit_to_tank_3">
+        <li class="text">PHASE_3_CSPIT_TO_TANK_3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-phase_3_cspit_to_tank_5">
+        <li class="text">PHASE_3_CSPIT_TO_TANK_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-phase_3_cspit_to_tank_7">
+        <li class="text">PHASE_3_CSPIT_TO_TANK_7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-phase_3_cspit_to_tank_8">
+        <li class="text">PHASE_3_CSPIT_TO_TANK_8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-phase_3_depstar_to_tank_1">
+        <li class="text">PHASE_3_DEPSTAR_TO_TANK_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-phase_3_depstar_to_tank_2">
+        <li class="text">PHASE_3_DEPSTAR_TO_TANK_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-phase_3_depstar_to_tank_4">
+        <li class="text">PHASE_3_DEPSTAR_TO_TANK_4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-phase_3_depstar_to_tank_5">
+        <li class="text">PHASE_3_DEPSTAR_TO_TANK_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-phase_3_depstar_to_tank_6">
+        <li class="text">PHASE_3_DEPSTAR_TO_TANK_6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-phase_3_depstar_to_tank_7">
+        <li class="text">PHASE_3_DEPSTAR_TO_TANK_7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-phase_4_tank_to_cspitce_1">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-phase_4_tank_to_cspitce_2">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-phase_4_tank_to_cspitce_3">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-phase_4_tank_to_cspitce_6">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-phase_4_tank_to_cspitce_8">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-phase_4_tank_to_cspitce_11">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-phase_4_tank_to_cspitce_12">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-phase_4_tank_to_cspitce_13">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-phase_4_tank_to_cspitce_14">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-phase_4_tank_to_cspitce_15">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-phase_4_tank_to_cspitce_17">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_17</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-phase_4_tank_to_cspitce_18">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_18</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-phase_4_tank_to_cspitce_19">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_19</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-phase_4_tank_to_cspitce_20">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_20</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-phase_4_tank_to_cspitce_21">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_21</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-phase_4_tank_to_cspitce_22">
+        <li class="text">PHASE_4_TANK_TO_CSPITCE_22</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-phase_4_tank_to_cmpica_1">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-phase_4_tank_to_cmpica_2">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-phase_4_tank_to_cmpica_5">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-phase_4_tank_to_cmpica_6">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-phase_4_tank_to_cmpica_7">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-phase_4_tank_to_cmpica_8">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-phase_4_tank_to_cmpica_9">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-phase_4_tank_to_cmpica_10">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-phase_4_tank_to_cmpica_11">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-phase_4_tank_to_cmpica_12">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-phase_4_tank_to_cmpica_13">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-phase_4_tank_to_cmpica_14">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-phase_4_tank_to_cmpica_15">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-phase_4_tank_to_cmpica_16">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_16</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-phase_4_tank_to_cmpica_17">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_17</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-phase_4_tank_to_cmpica_18">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_18</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-phase_4_tank_to_cmpica_19">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_19</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-phase_4_tank_to_cmpica_20">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_20</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-phase_4_tank_to_cmpica_21">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_21</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-phase_4_tank_to_cmpica_22">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_22</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-phase_4_tank_to_cmpica_23">
+        <li class="text">PHASE_4_TANK_TO_CMPICA_23</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-phase_4_cmpica_to_gate_1">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-phase_4_cmpica_to_gate_2">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-phase_4_cmpica_to_gate_3">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-phase_4_cmpica_to_gate_4">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-phase_4_cmpica_to_gate_5">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-phase_4_cmpica_to_gate_6">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-phase_4_cmpica_to_gate_7">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-phase_4_cmpica_to_gate_8">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-phase_4_cmpica_to_gate_9">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-phase_4_cmpica_to_gate_10">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-phase_4_cmpica_to_gate_11">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-phase_4_cmpica_to_gate_12">
+        <li class="text">PHASE_4_CMPICA_TO_GATE_12</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
